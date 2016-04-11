@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" style="font-size: 57.5px;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Widget</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/xShop.css">
+
+    <style>
+        html {
+        }
+
+        a {
+            color: #333;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, dl {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        strong, b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="font-size: 14px; padding-bottom: 0;">
+<!-- Header -->
+<header data-am-widget="header"
+        class="am-header am-header-default">
+    <div class="am-header-left am-header-nav">
+        <a href="#left-link" class="">
+            <i class="am-header-icon am-icon-angle-left"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            收货地址
+        </a>
+    </h1>
+
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-icon-search"></i>
+        </a>
+    </div>
+</header>
+
+<div class="page-address-list" data-log="地址列表">
+
+    <div class="address-manage">
+        <div class="ui-card">
+            <ul class="ui-card-item ui-list">
+                <li class="ui-list-item identity">
+                    <a href="javascript:;">删除</a>
+                    <span class="consignee">刘东</span>
+                    <span>150****0010</span>
+                </li>
+                <li class="ui-list-item edit" onclick="location.href='new_address.html'">
+                    <p>湖北 武汉市 洪山区</p>
+                    <p>大学园路4号麒麟社5栋1002</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="add"><a href="new_address.html" class="ui-button ui-button-active"><span>新建地址</span></a></div>
+    <div class="popup-risk-check"></div>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
