@@ -10,129 +10,85 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="stylesheet" href="assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/xShop.css">
+    <link rel="stylesheet" href="assets/css/common.css">
 
-    <style>
-        html {
-            background: #f5f5f5;
-        }
-
-        a {
-            color: #333;
-        }
-
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        ul, dl {
-            padding: 0;
-            list-style: none;
-            margin: 0;
-        }
-
-        strong, b {
-            font-weight: bold;
-        }
-    </style>
 </head>
-<body style="font-size: 14px; padding-bottom: 0;">
-<!-- Header -->
-<header data-am-widget="header"
-        class="am-header am-header-default">
-    <div class="am-header-left am-header-nav">
-        <a href="#left-link" class="">
-            <i class="am-header-icon am-icon-angle-left"></i>
-        </a>
-    </div>
+<body>
 
-    <h1 class="am-header-title">
-        <a href="#title-link" class="">
-            用户结算
-        </a>
-    </h1>
+<div class="wrap">
 
-    <div class="am-header-right am-header-nav">
-        <a href="#right-link" class="">
-            <i class="am-icon-search"></i>
-        </a>
-    </div>
-</header>
-
-<div class="page-order-checkout">
-
-    <div class="page-order-checkout-wrap">
-        <div class="b1 icon_arrow">
-            <a href="address_list.html">
-                <div class="b11"><p><span>刘东</span><span>150****0010</span></p></div>
-                <div class="b13"><p>湖北 武汉市 洪山区 大学园路4号麒麟社5栋1002</p></div>
-            </a>
-        </div>
-        <div class="ui_line"></div>
-        <div class="b2">
-            <ul>
-                <li class="on"><a href="javascript:;" class="alipaywap">微信支付</a></li>
-                <li class=""><a href="javascript:;" class="">货到付款</a></li>
-            </ul>
-        </div>
-        <div class="ui_line"></div>
-
-        <!--
-        <div class="b3 icon_arrow">
-            <dl>
-                <dt><span>电子发票</span><strong>发票类型</strong></dt>
-            </dl>
-        </div>
-        <div class="b3 icon_arrow">
-            <dl>
-                <dt><span>不限送货时间</span><strong>送货时间</strong></dt>
-            </dl>
-        </div>
-        <div class="ui_line"></div>
-        -->
-
-        <div class="b8">
-            <div class="b8w">
-                <div class="b81">
-                    <div class="img"><img src="//i1.mifile.cn/a1/T1wYEjBCdT1RXrhCrK.jpg?width=80&amp;height=80"></div>
-                </div>
-                <div class="b82">
-                    <div class="name"><p>
-                        <span>红米Note 电信4G双卡增强版 白色 16GB</span></p></div>
-                </div>
-                <div class="b83">
-                    <div class="price"><strong>799元</strong></div>
-                </div>
+    <div class="page-order-checkout">
+        <div class="page-order-checkout-wrap">
+            <div class="b1 icon_arrow">
+                <a href="address_list.html">
+                    <div class="b11"><p><span>刘东</span><span>150****0010</span></p></div>
+                    <div class="b13"><p>湖北 武汉市 洪山区 大学园路4号麒麟社5栋1002</p></div>
+                </a>
             </div>
-            <div class="b8w">
-                <div class="b81">
-                    <div class="img"><img src="//i1.mifile.cn/a1/T1s1JTB4bT1RXrhCrK.jpg?width=80&amp;height=80"></div>
+            <div class="ui_line"></div>
+            <div class="b2">
+                <ul>
+                    <li class="on"><a href="javascript:;" class="alipaywap">微信支付</a></li>
+                    <li class=""><a href="javascript:;" class="">货到付款</a></li>
+                </ul>
+            </div>
+            <div class="ui_line"></div>
+
+            <!--
+            <div class="b3 icon_arrow">
+                <dl>
+                    <dt><span>电子发票</span><strong>发票类型</strong></dt>
+                </dl>
+            </div>
+            <div class="b3 icon_arrow">
+                <dl>
+                    <dt><span>不限送货时间</span><strong>送货时间</strong></dt>
+                </dl>
+            </div>
+            <div class="ui_line"></div>
+            -->
+
+            <div class="b8">
+                <div class="b8w">
+                    <div class="b81">
+                        <div class="img"><img src="//i1.mifile.cn/a1/T1wYEjBCdT1RXrhCrK.jpg?width=80&amp;height=80">
+                        </div>
+                    </div>
+                    <div class="b82">
+                        <div class="name"><p>
+                            <span>红米Note 电信4G双卡增强版 白色 16GB</span></p></div>
+                    </div>
+                    <div class="b83">
+                        <div class="price"><strong>799元</strong></div>
+                    </div>
                 </div>
-                <div class="b82">
-                    <div class="name"><p>
-                        <span>小米路由器 mini 白色</span></p></div>
-                </div>
-                <div class="b83">
-                    <div class="price"><strong>129元</strong></div>
-                </div>
-            </div><!--v-repeat-cart.list--></div>
-        <div class="ui_line"></div>
-        <div class="b5">
-            <div class="b51"><p><strong>商品价格：</strong><span>928元</span></p></div>
-            <div class="b53"><p><strong>配送费用：</strong><span>0元</span></p></div>
-        </div>
-        <div class="b7">
-            <div class="b71"><span>共2件 合计: </span><strong>928元</strong></div>
-            <div class="b72"><a href="javascript:;" class="ui-button"><span>去付款</span></a></div>
+                <div class="b8w">
+                    <div class="b81">
+                        <div class="img"><img src="//i1.mifile.cn/a1/T1s1JTB4bT1RXrhCrK.jpg?width=80&amp;height=80">
+                        </div>
+                    </div>
+                    <div class="b82">
+                        <div class="name"><p>
+                            <span>小米路由器 mini 白色</span></p></div>
+                    </div>
+                    <div class="b83">
+                        <div class="price"><strong>129元</strong></div>
+                    </div>
+                </div><!--v-repeat-cart.list--></div>
+            <div class="ui_line"></div>
+            <div class="b5">
+                <div class="b51"><p><strong>商品价格：</strong><span>928元</span></p></div>
+                <div class="b53"><p><strong>配送费用：</strong><span>0元</span></p></div>
+            </div>
+            <div class="b7">
+                <div class="b71"><span>共2件 合计: </span><strong>928元</strong></div>
+                <div class="b72"><a href="javascript:;" class="ui-button"><span>去付款</span></a></div>
+            </div>
         </div>
     </div>
+
 </div>
 
-
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/amazeui.min.js"></script>
 </body>
 </html>
