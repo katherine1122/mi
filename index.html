@@ -1,19 +1,21 @@
 <!doctype html>
-<html style="font-size: 57.5px;">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Amaze UI Widget</title>
+    <title>长乐小卖部</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="assets/flexslider/flexslider.css">
     <link rel="stylesheet" href="assets/css/common.css">
+    <script src="assets/js/fontSize.js"></script>
 </head>
 <body>
-
 
 <div id="wrapper">
     <div class="page-index" id="home" data-log="首页">
@@ -26,55 +28,31 @@
             </div>
             <div class="search_bottom"></div>
         </div>
-        <!--
-        调用FlexSlider插件,https://github.com/woothemes/FlexSlider
-        <div id="slider" class="slider">
-            <div class="swipe-wrap">
-                <div>
-                    <a href="/1/#/product/view?product_id=3281">
-                        <span class="imgurl">
-                            <img src="http://i8.mifile.cn/v1/a1/T1_1W_BgVv1RXrhCrK!720x360.jpg">
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href="/1/#/product/list?id=134">
-                        <span class="imgurl">
-                            <img src="http://i8.mifile.cn/v1/a1/T12LdgBXZv1RXrhCrK!720x360.jpg">
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href="/1/#/product/list?id=286">
-                        <span class="imgurl">
-                            <img src="http://i8.mifile.cn/v1/a1/T1zgZvBgK_1RXrhCrK!720x360.jpg">
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href="/1/#/product/list?id=254">
-                        <span class="imgurl">
-                            <img src="http://i8.mifile.cn/v1/a1/T1m4bgBsdv1RXrhCrK!720x360.jpg">
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href="/1/#/product/list?id=175">
-                        <span class="imgurl">
-                            <img src="http://i8.mifile.cn/v1/a1/T17XD_Bjxv1RXrhCrK!720x360.jpg">
-                        </span>
-                    </a>
-                </div>
+
+        <!--焦点图-->
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <a href=""><img src="http://i8.mifile.cn/v1/a1/T1_1W_BgVv1RXrhCrK!720x360.jpg"/></a>
+                    </li>
+                    <li>
+                        <img src="http://i8.mifile.cn/v1/a1/T12LdgBXZv1RXrhCrK!720x360.jpg"/>
+                    </li>
+                    <li>
+                        <img src="http://i8.mifile.cn/v1/a1/T1zgZvBgK_1RXrhCrK!720x360.jpg"/>
+                    </li>
+                    <li>
+                        <img src="http://i8.mifile.cn/v1/a1/T1m4bgBsdv1RXrhCrK!720x360.jpg"/>
+                    </li>
+                    <li>
+                        <img src="http://i8.mifile.cn/v1/a1/T17XD_Bjxv1RXrhCrK!720x360.jpg"/>
+                    </li>
+                </ul>
             </div>
-            <div class="swipe-nav">
-                <span class="">&nbsp;</span>
-                <span class="on">&nbsp;</span>
-                <span class="">&nbsp;</span>
-                <span class="">&nbsp;</span>
-                <span class="">&nbsp;</span>
-            </div>
-        </div>
-        -->
+        </section>
+
+        <!--推荐商品-->
         <div class="list">
             <div class="section">
                 <div class="mcells_auto_fill">
@@ -213,5 +191,16 @@
 </div>
 
 <script src="assets/js/jquery.min.js"></script>
+<!--<script src="assets/js/fontSize.js"></script>-->
+
+<script defer src="assets/flexslider/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            directionNav: false
+        });
+    });
+</script>
 </body>
 </html>
