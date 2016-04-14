@@ -5,6 +5,7 @@ body, h1, h2, h3, p, dl, dd, ol, ul, th, td, form, fieldset, input, button, text
 }
 
 #wrapper {
+    display: none;
     position: relative;
     z-index: 2;
 }
@@ -283,16 +284,28 @@ fieldset, img {
     content: "\e61c"
 }
 
-[class^=icon-], [class*=" icon-"], .iconfont {
-    font-family: iconfont !important;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+.global-loading {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center
+}
+
+.global-loading .global-loading-logo .global-loading-anim {
+    height: 1.5rem
+}
+
+.global-loading .global-loading-text {
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #333
+}
+
+.global-loading .global-loading-text .hot {
+    font-weight: 700;
+    font-size: .28rem;
+    padding: 0 .06rem
 }
 
 .header {
@@ -449,6 +462,9 @@ h1, h2, h3 {
     font-size: .22rem;
     line-height: .8;
     color: #999;
+}
+.footer li>a.on .nav .ispr.if {
+    background-position-y: -1.6rem;
 }
 
 .ui-mask {
@@ -2197,4 +2213,7 @@ span.on {
 }
 .page-my-order .order_list .ol-item:last-child {
     border: 0;
+}
+.page-personal-center .new_nav li:last-child {
+    border-right: 0;
 }
