@@ -441,6 +441,9 @@ h1, h2, h3 {
 .footer li > a.on .nav p {
     color: #FF5722;
 }
+.footer li>a.on .nav .ispr.ic {
+    background-position-y: 0;
+}
 
 .footer .nav p {
     font-size: .22rem;
@@ -624,7 +627,8 @@ h1, h2, h3 {
 }
 
 .page-index .list .img .ico {
-    width: 100%;
+    /*width: 100%;*/
+    max-height: 83px;
 }
 
 .page-index .list .info {
@@ -1856,7 +1860,7 @@ span.on {
     padding-bottom: .12rem;
 }
 
-.page-product-view .b5 li img {
+.page-product-view .b5 img {
     width: 100%;
 }
 
@@ -2190,4 +2194,7 @@ span.on {
 
 .page-my-order .order_list .oi3 span {
     color: #999;
+}
+.page-my-order .order_list .ol-item:last-child {
+    border: 0;
 }
