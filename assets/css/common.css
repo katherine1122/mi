@@ -284,7 +284,6 @@ fieldset, img {
     content: "\e61c"
 }
 
-
 .global-loading {
     position: absolute;
     top: 40%;
@@ -454,7 +453,8 @@ h1, h2, h3 {
 .footer li > a.on .nav p {
     color: #FF5722;
 }
-.footer li>a.on .nav .ispr.ic {
+
+.footer li > a.on .nav .ispr.ic {
     background-position-y: 0;
 }
 
@@ -463,7 +463,8 @@ h1, h2, h3 {
     line-height: .8;
     color: #999;
 }
-.footer li>a.on .nav .ispr.if {
+
+.footer li > a.on .nav .ispr.if {
     background-position-y: -1.6rem;
 }
 
@@ -890,7 +891,7 @@ h1, h2, h3 {
     background-position-y: -1.8rem;
 }
 
-.page-personal-center ol.list a {
+.page-personal-center ol.list span {
     font-size: .26rem;
     display: block;
 }
@@ -2211,9 +2212,35 @@ span.on {
 .page-my-order .order_list .oi3 span {
     color: #999;
 }
+
 .page-my-order .order_list .ol-item:last-child {
     border: 0;
 }
+
 .page-personal-center .new_nav li:last-child {
     border-right: 0;
+}
+
+.page-my-order .order_list .oi4 {
+    padding-bottom: .26rem;
+    overflow: hidden;
+}
+
+.page-my-order .order_list .oi4 a.org {
+    color: #FF5722;
+    border-color: #FF5722;
+}
+
+.page-my-order .order_list .oi4 a {
+    display: inline-block;
+    border: 1px solid #999;
+    font-size: .28rem;
+    padding: .14rem .2rem;
+    -webkit-border-radius: .04rem;
+    -moz-border-radius: .04rem;
+    -ms-border-radius: .04rem;
+    -o-border-radius: .04rem;
+    border-radius: .04rem;
+    float: right;
+    margin-left: .2rem;
 }
